@@ -5,6 +5,8 @@ import { TopBar } from './TopBar';
 import { PwaUpdatePrompt } from '@/components/PwaUpdatePrompt';
 import { applyTheme, getThemePreference, watchSystemTheme } from '@/lib/theme';
 import { useSettings } from '@/db/hooks';
+import { startReminderLoop } from '@/lib/reminders';
+import { useRef } from 'react';
 
 export function AppLayout() {
   const settings = useSettings();
@@ -16,6 +18,11 @@ export function AppLayout() {
   useEffect(() => {
     if (settings) applyTheme(settings.theme);
   }, [settings]);
+  const settingsRef = useRef(settings);
+  useEffect(() => {
+    settingsRef.current = settings;
+  }, [settings]);
+  useEffect(() => startReminderLoop(() => settingsRef.current), []);
 
   if (settings && !settings.onboardingDone) {
     return <Navigate to="/bem-vindo" replace state={{ from: location.pathname }} />;

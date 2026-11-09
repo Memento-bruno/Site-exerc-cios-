@@ -1,7 +1,5 @@
-import { lazy, Suspense } from 'react';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AppLayout } from './AppLayout';
-import { Placeholder } from './Placeholder';
 import { ErrorPage } from './ErrorPage';
 import { OnboardingPage } from '@/features/onboarding/OnboardingPage';
 import { TodayPage } from '@/features/today/TodayPage';
@@ -13,9 +11,8 @@ import { ExercisePage } from '@/features/library/ExercisePage';
 import { SafetyPage } from '@/features/health/SafetyPage';
 import { HabitsPage } from '@/features/health/HabitsPage';
 import { AboutPage } from '@/features/settings/AboutPage';
-const ProgressPage = lazy(() =>
-  import('@/features/progress/ProgressPage').then((m) => ({ default: m.ProgressPage })),
-);
+import { SettingsPage } from '@/features/settings/SettingsPage';
+import { ProgressPageLazy } from '@/features/progress/ProgressPageLazy';
 
 export const router = createBrowserRouter([
   { path: '/bem-vindo', element: <OnboardingPage />, errorElement: <ErrorPage /> },
@@ -29,17 +26,10 @@ export const router = createBrowserRouter([
       { path: 'corrida/:week/:weekday', element: <RunTimerPage /> },
       { path: 'plano', element: <PlanPage /> },
       { path: 'plano/:week', element: <WeekPage /> },
-      {
-        path: 'progresso',
-        element: (
-          <Suspense fallback={<div className="p-4 text-slate-500">Carregando gráficos…</div>}>
-            <ProgressPage />
-          </Suspense>
-        ),
-      },
+      { path: 'progresso', element: <ProgressPageLazy /> },
       { path: 'biblioteca', element: <LibraryPage /> },
       { path: 'biblioteca/:id', element: <ExercisePage /> },
-      { path: 'config', element: <Placeholder title="Configurações" /> },
+      { path: 'config', element: <SettingsPage /> },
       { path: 'seguranca', element: <SafetyPage /> },
       { path: 'habitos', element: <HabitsPage /> },
       { path: 'sobre', element: <AboutPage /> },
