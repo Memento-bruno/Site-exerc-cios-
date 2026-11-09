@@ -36,3 +36,14 @@ describe('km/h ↔ min/km', () => {
     expect(formatPace(345)).toBe('5:45');
   });
 });
+
+describe('parseDuration', () => {
+  it('aceita mm:ss, h:mm:ss e minutos', async () => {
+    const { parseDuration } = await import('./units');
+    expect(parseDuration('29:45')).toBe(1785);
+    expect(parseDuration('1:02:03')).toBe(3723);
+    expect(parseDuration('30')).toBe(1800);
+    expect(parseDuration('')).toBeNull();
+    expect(parseDuration('ab')).toBeNull();
+  });
+});

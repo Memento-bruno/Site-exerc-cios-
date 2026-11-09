@@ -72,3 +72,14 @@ export function weightForBmi(targetBmi: number, cm: number): number {
   const m = cm / 100;
   return targetBmi * m * m;
 }
+
+/** "mm:ss", "h:mm:ss" ou só minutos → segundos. */
+export function parseDuration(text: string): number | null {
+  const t = text.trim();
+  if (!t) return null;
+  const parts = t.split(':').map(Number);
+  if (parts.some((p) => Number.isNaN(p))) return null;
+  if (parts.length === 1) return parts[0] * 60;
+  if (parts.length === 2) return parts[0] * 60 + parts[1];
+  return parts[0] * 3600 + parts[1] * 60 + parts[2];
+}

@@ -5,6 +5,7 @@ import { ErrorPage } from './ErrorPage';
 import { OnboardingPage } from '@/features/onboarding/OnboardingPage';
 import { TodayPage } from '@/features/today/TodayPage';
 import { WorkoutPage } from '@/features/workout/WorkoutPage';
+import { RunTimerPage } from '@/features/run-timer/RunTimerPage';
 
 export const router = createBrowserRouter([
   { path: '/bem-vindo', element: <OnboardingPage />, errorElement: <ErrorPage /> },
@@ -15,7 +16,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <TodayPage /> },
       { path: 'treino/:week/:weekday', element: <WorkoutPage /> },
-      { path: 'corrida/:week/:weekday', element: <Placeholder title="Corrida" /> },
+      { path: 'corrida/:week/:weekday', element: <RunTimerPage /> },
       { path: 'plano', element: <Placeholder title="Plano" /> },
       { path: 'plano/:week', element: <Placeholder title="Semana" /> },
       { path: 'progresso', element: <Placeholder title="Progresso" /> },
