@@ -6,6 +6,12 @@ import { OnboardingPage } from '@/features/onboarding/OnboardingPage';
 import { TodayPage } from '@/features/today/TodayPage';
 import { WorkoutPage } from '@/features/workout/WorkoutPage';
 import { RunTimerPage } from '@/features/run-timer/RunTimerPage';
+import { PlanPage, WeekPage } from '@/features/plan/PlanPage';
+import { LibraryPage } from '@/features/library/LibraryPage';
+import { ExercisePage } from '@/features/library/ExercisePage';
+import { SafetyPage } from '@/features/health/SafetyPage';
+import { HabitsPage } from '@/features/health/HabitsPage';
+import { AboutPage } from '@/features/settings/AboutPage';
 
 export const router = createBrowserRouter([
   { path: '/bem-vindo', element: <OnboardingPage />, errorElement: <ErrorPage /> },
@@ -17,15 +23,15 @@ export const router = createBrowserRouter([
       { index: true, element: <TodayPage /> },
       { path: 'treino/:week/:weekday', element: <WorkoutPage /> },
       { path: 'corrida/:week/:weekday', element: <RunTimerPage /> },
-      { path: 'plano', element: <Placeholder title="Plano" /> },
-      { path: 'plano/:week', element: <Placeholder title="Semana" /> },
+      { path: 'plano', element: <PlanPage /> },
+      { path: 'plano/:week', element: <WeekPage /> },
       { path: 'progresso', element: <Placeholder title="Progresso" /> },
-      { path: 'biblioteca', element: <Placeholder title="Biblioteca" /> },
-      { path: 'biblioteca/:id', element: <Placeholder title="Exercício" /> },
+      { path: 'biblioteca', element: <LibraryPage /> },
+      { path: 'biblioteca/:id', element: <ExercisePage /> },
       { path: 'config', element: <Placeholder title="Configurações" /> },
-      { path: 'seguranca', element: <Placeholder title="Segurança" /> },
-      { path: 'habitos', element: <Placeholder title="Hábitos" /> },
-      { path: 'sobre', element: <Placeholder title="Sobre" /> },
+      { path: 'seguranca', element: <SafetyPage /> },
+      { path: 'habitos', element: <HabitsPage /> },
+      { path: 'sobre', element: <AboutPage /> },
       { path: '*', element: <Navigate to="/" replace /> },
     ],
   },
