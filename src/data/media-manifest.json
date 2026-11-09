@@ -1,6 +1,9 @@
 {
   "gato-vaca": {
-    "images": ["/media/exercises/gato-vaca/0.webp", "/media/exercises/gato-vaca/1.webp"]
+    "images": [
+      "/media/exercises/gato-vaca/0.webp",
+      "/media/exercises/gato-vaca/1.webp"
+    ]
   },
   "flexor-quadril-ajoelhado": {
     "images": [
@@ -21,7 +24,10 @@
     ]
   },
   "leg-press": {
-    "images": ["/media/exercises/leg-press/0.webp", "/media/exercises/leg-press/1.webp"]
+    "images": [
+      "/media/exercises/leg-press/0.webp",
+      "/media/exercises/leg-press/1.webp"
+    ]
   },
   "sentar-levantar-banco": {
     "images": [
@@ -42,7 +48,10 @@
     ]
   },
   "ponte-gluteo": {
-    "images": ["/media/exercises/ponte-gluteo/0.webp", "/media/exercises/ponte-gluteo/1.webp"]
+    "images": [
+      "/media/exercises/ponte-gluteo/0.webp",
+      "/media/exercises/ponte-gluteo/1.webp"
+    ]
   },
   "ponte-gluteo-halter": {
     "images": [
@@ -57,13 +66,22 @@
     ]
   },
   "terra-romeno": {
-    "images": ["/media/exercises/terra-romeno/0.webp", "/media/exercises/terra-romeno/1.webp"]
+    "images": [
+      "/media/exercises/terra-romeno/0.webp",
+      "/media/exercises/terra-romeno/1.webp"
+    ]
   },
   "step-up": {
-    "images": ["/media/exercises/step-up/0.webp", "/media/exercises/step-up/1.webp"]
+    "images": [
+      "/media/exercises/step-up/0.webp",
+      "/media/exercises/step-up/1.webp"
+    ]
   },
   "afundo-reverso": {
-    "images": ["/media/exercises/afundo-reverso/0.webp", "/media/exercises/afundo-reverso/1.webp"]
+    "images": [
+      "/media/exercises/afundo-reverso/0.webp",
+      "/media/exercises/afundo-reverso/1.webp"
+    ]
   },
   "panturrilha-degrau": {
     "images": [
@@ -72,10 +90,16 @@
     ]
   },
   "saltos-step": {
-    "images": ["/media/exercises/saltos-step/0.webp", "/media/exercises/saltos-step/1.webp"]
+    "images": [
+      "/media/exercises/saltos-step/0.webp",
+      "/media/exercises/saltos-step/1.webp"
+    ]
   },
   "remada-maquina": {
-    "images": ["/media/exercises/remada-maquina/0.webp", "/media/exercises/remada-maquina/1.webp"]
+    "images": [
+      "/media/exercises/remada-maquina/0.webp",
+      "/media/exercises/remada-maquina/1.webp"
+    ]
   },
   "remada-halter-banco": {
     "images": [
@@ -84,7 +108,10 @@
     ]
   },
   "puxada-pulley": {
-    "images": ["/media/exercises/puxada-pulley/0.webp", "/media/exercises/puxada-pulley/1.webp"]
+    "images": [
+      "/media/exercises/puxada-pulley/0.webp",
+      "/media/exercises/puxada-pulley/1.webp"
+    ]
   },
   "flexao-inclinada": {
     "images": [
@@ -93,7 +120,10 @@
     ]
   },
   "supino-halteres": {
-    "images": ["/media/exercises/supino-halteres/0.webp", "/media/exercises/supino-halteres/1.webp"]
+    "images": [
+      "/media/exercises/supino-halteres/0.webp",
+      "/media/exercises/supino-halteres/1.webp"
+    ]
   },
   "desenvolvimento-halteres": {
     "images": [
@@ -102,22 +132,40 @@
     ]
   },
   "dead-bug": {
-    "images": ["/media/exercises/dead-bug/0.webp", "/media/exercises/dead-bug/1.webp"]
+    "images": [
+      "/media/exercises/dead-bug/0.webp",
+      "/media/exercises/dead-bug/1.webp"
+    ]
   },
   "prancha": {
-    "images": ["/media/exercises/prancha/0.webp", "/media/exercises/prancha/1.webp"]
+    "images": [
+      "/media/exercises/prancha/0.webp",
+      "/media/exercises/prancha/1.webp"
+    ]
   },
   "prancha-lateral": {
-    "images": ["/media/exercises/prancha-lateral/0.webp", "/media/exercises/prancha-lateral/1.webp"]
+    "images": [
+      "/media/exercises/prancha-lateral/0.webp",
+      "/media/exercises/prancha-lateral/1.webp"
+    ]
   },
   "pallof-press": {
-    "images": ["/media/exercises/pallof-press/0.webp", "/media/exercises/pallof-press/1.webp"]
+    "images": [
+      "/media/exercises/pallof-press/0.webp",
+      "/media/exercises/pallof-press/1.webp"
+    ]
   },
   "farmer-carry": {
-    "images": ["/media/exercises/farmer-carry/0.webp", "/media/exercises/farmer-carry/1.webp"]
+    "images": [
+      "/media/exercises/farmer-carry/0.webp",
+      "/media/exercises/farmer-carry/1.webp"
+    ]
   },
   "bike-leve": {
-    "images": ["/media/exercises/bike-leve/0.webp", "/media/exercises/bike-leve/1.webp"]
+    "images": [
+      "/media/exercises/bike-leve/0.webp",
+      "/media/exercises/bike-leve/1.webp"
+    ]
   },
   "caminhada-rapida": {
     "images": [
@@ -126,9 +174,15 @@
     ]
   },
   "corrida-trote": {
-    "images": ["/media/exercises/corrida-trote/0.webp", "/media/exercises/corrida-trote/1.webp"]
+    "images": [
+      "/media/exercises/corrida-trote/0.webp",
+      "/media/exercises/corrida-trote/1.webp"
+    ]
   },
   "tiros-esteira": {
-    "images": ["/media/exercises/tiros-esteira/0.webp", "/media/exercises/tiros-esteira/1.webp"]
+    "images": [
+      "/media/exercises/tiros-esteira/0.webp",
+      "/media/exercises/tiros-esteira/1.webp"
+    ]
   }
 }

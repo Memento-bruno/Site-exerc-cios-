@@ -28,17 +28,14 @@ export function defaultSettings(now = new Date()): Settings {
   };
 }
 
-export async function getSettings(): Promise<Settings> {
-  const s = await db.settings.get('settings');
-  if (s)
-    return {
-      ...defaultSettings(),
-      ...s,
-      reminders: { ...defaultSettings().reminders, ...s.reminders },
-    };
+export function mergeSettings(s: Settings | undefined): Settings {
   const d = defaultSettings();
-  await db.settings.put(d);
-  return d;
+  if (!s) return d;
+  return { ...d, ...s, reminders: { ...d.reminders, ...s.reminders } };
+}
+
+export async function getSettings(): Promise<Settings> {
+  return mergeSettings(await db.settings.get('settings'));
 }
 
 export async function updateSettings(patch: Partial<Omit<Settings, 'id'>>): Promise<Settings> {
