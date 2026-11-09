@@ -4,6 +4,7 @@ import { Placeholder } from './Placeholder';
 import { ErrorPage } from './ErrorPage';
 import { OnboardingPage } from '@/features/onboarding/OnboardingPage';
 import { TodayPage } from '@/features/today/TodayPage';
+import { WorkoutPage } from '@/features/workout/WorkoutPage';
 
 export const router = createBrowserRouter([
   { path: '/bem-vindo', element: <OnboardingPage />, errorElement: <ErrorPage /> },
@@ -13,7 +14,7 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <TodayPage /> },
-      { path: 'treino/:week/:weekday', element: <Placeholder title="Treino" /> },
+      { path: 'treino/:week/:weekday', element: <WorkoutPage /> },
       { path: 'corrida/:week/:weekday', element: <Placeholder title="Corrida" /> },
       { path: 'plano', element: <Placeholder title="Plano" /> },
       { path: 'plano/:week', element: <Placeholder title="Semana" /> },
