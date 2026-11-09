@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/app/AppLayout.tsx","./src/app/BottomNav.tsx","./src/app/Placeholder.tsx","./src/app/TopBar.tsx","./src/app/router.tsx","./src/components/Icon.tsx","./src/components/PwaUpdatePrompt.tsx","./src/lib/smoke.test.ts","./src/lib/theme.ts","./src/test/setup.ts"],"version":"6.0.3"}
