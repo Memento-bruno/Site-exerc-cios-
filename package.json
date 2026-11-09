@@ -11,8 +11,10 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "fetch-media": "tsx scripts/fetch-exercise-media.ts",
-    "media-report": "tsx scripts/media-coverage.ts"
+    "fetch-media": "tsx scripts/fetch-exercise-media.ts && tsx scripts/media-manifest.ts",
+    "media-report": "tsx scripts/media-manifest.ts",
+    "prebuild": "tsx scripts/media-manifest.ts",
+    "pretest": "tsx scripts/media-manifest.ts"
   },
   "dependencies": {
     "dexie": "^4.4.7",
