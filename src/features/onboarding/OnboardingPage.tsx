@@ -49,7 +49,7 @@ function OnboardingForm({ initial }: { initial: Settings }) {
   }
 
   return (
-    <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-4 py-8">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-4 py-8">
       <div className="mb-6 flex items-center gap-3">
         <span className="grid size-12 place-items-center rounded-2xl bg-brand-500 text-white">
           <Icon name="run" className="size-7" />
@@ -204,6 +204,6 @@ function OnboardingForm({ initial }: { initial: Settings }) {
           </button>
         )}
       </div>
-    </div>
+    </main>
   );
 }

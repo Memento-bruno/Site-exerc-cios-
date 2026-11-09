@@ -204,10 +204,7 @@ export function TodayPage() {
                     corrida ou carga.
                   </p>
                   <div className="mt-2 flex gap-2">
-                    <button
-                      className="btn-primary flex-1 bg-rose-600 hover:bg-rose-700"
-                      onClick={() => void startPainDay()}
-                    >
+                    <button className="btn-danger flex-1" onClick={() => void startPainDay()}>
                       Fazer o treino leve
                     </button>
                     <button className="btn-secondary" onClick={() => setPainOpen(false)}>
