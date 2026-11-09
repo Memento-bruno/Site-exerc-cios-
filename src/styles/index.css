@@ -54,19 +54,41 @@ body {
 
 /* Crossfade das duas fotos do exercício */
 @keyframes xfade-a {
-  0%, 45% { opacity: 1; }
-  55%, 95% { opacity: 0; }
-  100% { opacity: 1; }
+  0%,
+  45% {
+    opacity: 1;
+  }
+  55%,
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes xfade-b {
-  0%, 45% { opacity: 0; }
-  55%, 95% { opacity: 1; }
-  100% { opacity: 0; }
+  0%,
+  45% {
+    opacity: 0;
+  }
+  55%,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-.xfade-a { animation: xfade-a var(--xfade-duration, 2.4s) ease-in-out infinite; }
-.xfade-b { animation: xfade-b var(--xfade-duration, 2.4s) ease-in-out infinite; }
+.xfade-a {
+  animation: xfade-a var(--xfade-duration, 2.4s) ease-in-out infinite;
+}
+.xfade-b {
+  animation: xfade-b var(--xfade-duration, 2.4s) ease-in-out infinite;
+}
 .xfade-paused .xfade-a,
-.xfade-paused .xfade-b { animation-play-state: paused; }
+.xfade-paused .xfade-b {
+  animation-play-state: paused;
+}
 
 .card {
   @apply rounded-2xl bg-white shadow-sm ring-1 ring-slate-200/70 dark:bg-slate-900 dark:ring-slate-800;
