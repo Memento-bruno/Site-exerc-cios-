@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.RumoAos5km" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

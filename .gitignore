@@ -3,7 +3,6 @@ dist
 dev-dist
 coverage
 .netlify
-android
 ios
 *.local
 .DS_Store
